@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="code-square.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <title>Doar - NobodyCode</title>
+</head>
+
+<body>
+  <header>
+    <h1><img src="code-square.png" alt="">Doar | Ajudar a crescer</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Página Inicial</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="doar.html">Doar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <article>
+        <h3>Me ajude a crescer</h3>
+        <p>
+          Olá, obrigado por chagares até aqui.
+        <p>"Se você encontrou valor em nosso conteúdo e gostaria de ajudar a sustentar o crescimento deste blog, peço-lhe encarecidamente a fazer uma doação. Qualquer contribuição, por menor que seja, faz uma grande diferença e é muito apreciada. Obrigado pelo seu apoio!"</p>
+        </p>
+        <div id="donate-button-container">
+          <div id="donate-button"></div>
+          <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+          <script>
+            PayPal.Donation.Button({
+              env: 'production',
+              hosted_button_id: 'FXTFZGU9M3LWN',
+              image: {
+                src: 'https://www.paypalobjects.com/pt_PT/PT/i/btn/btn_donateCC_LG.gif',
+                alt: 'Faça donativos com o botão PayPal',
+                title: 'PayPal - The safer, easier way to pay online!',
+              }
+            }).render('#donate-button');
+          </script>
+        </div><br><br>
+        <a class="doar" href="https://www.paypal.com/donate/?hosted_button_id=FXTFZGU9M3LWN">Doar para ajudar o blog a crescer</a><br><br>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 NobodyCode</p>
+  </footer>
+</body>
+
+</html>
